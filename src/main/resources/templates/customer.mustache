@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<P><h1>Search Customer Information</h1></P>
+{{#customer}}
+    Customer's info for nr.{{id}} | Name: {{name}} | City: {{city}} | Phone number: {{phoneNumber}}.
+{{/customer}}
+<div>
+    <form method="post" action = "/customer">
+        <input type="text" name="customerId" placeholder="Введите номер" />
+            <button type="submit">Найти</button>
+    </form>
+</div>
+<div>
+</div>
+</body>
+</html>
